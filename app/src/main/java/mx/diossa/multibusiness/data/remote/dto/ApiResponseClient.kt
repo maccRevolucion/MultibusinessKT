@@ -9,7 +9,7 @@ import mx.diossa.multibusiness.data.local.entity.ClientsProductsBonifications
 
 data class ApiResponseClient(
     val data: List<ClientEntity>,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseClientAuthorization(

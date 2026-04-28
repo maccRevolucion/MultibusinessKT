@@ -9,15 +9,15 @@ data class FoliosEntity(
     @PrimaryKey @SerializedName("serieId")
     val serieId: Int,
     @SerializedName("serie")
-    val serie: String,
+    val serie: String?,
     @SerializedName("folioInitial")
-    val initialFolio: Int,
+    val initialFolio: Int?,
     @SerializedName("folioFinal")
-    val finalFolio: Int,
+    val finalFolio: Int?,
     @SerializedName("folioCurrent")
-    val folioCurrent: Int,
+    val folioCurrent: Int?,
     @SerializedName("status")
-    val status: Int,
+    val status: Int?,
     @SerializedName("concept")
-    val concept: String
+    val concept: String?
 )
