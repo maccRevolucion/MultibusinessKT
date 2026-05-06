@@ -9,18 +9,18 @@ data class PaymentsEntity(
     @PrimaryKey
     val paymentId: String,
     @SerializedName("id_cargo")
-    val chargeId: Int,
+    val chargeId: Int?,
     @SerializedName("fecha")
-    val date: String,
+    val date: String?,
     @SerializedName("id_ruta")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("importe")
-    val amount: Double,
+    val amount: Double?,
     @SerializedName("tipo")
-    val type: String,
+    val type: String?,
     @SerializedName("usuario_registro")
-    val userRegister: Int,
+    val userRegister: Int?,
     @SerializedName("activo")
-    val active: Int,
-    val hour: String
+    val active: Int?,
+    val hour: String?
 )

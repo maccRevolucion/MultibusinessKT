@@ -10,42 +10,42 @@ data class InitiativeEntity(
     @SerializedName("id_iniciativa")
     val iniciativeId: Int,
     @SerializedName("id_producto")
-    val productId: Int,
+    val productId: Int?,
     @SerializedName("inicitivaDetalle")
     val inicitivaDetalle: List<InitiativeDetailApplyEntity>,
     @SerializedName("inicitivaDetalleVenta")
     val inicitivaDetalleSale: List<InitiativeDetailGenerateEntity>,
 
     @SerializedName("fecha_inicio")
-    val startDate: String,
+    val startDate: String?,
     @SerializedName("fecha_termino")
-    val endDate: String,
+    val endDate: String?,
     @SerializedName("importe")
-    val importe: Double,
+    val importe: Double?,
     @SerializedName("nombre_cupon")
-    val couponName: String,
+    val couponName: String?,
     @SerializedName("usuario_registro")
-    val registerUSer: String,
+    val registerUSer: String?,
     @SerializedName("fecha_registro")
-    val registerDate: String,
+    val registerDate: String?,
     @SerializedName("activo")
-    val active: Int,
+    val active: Int?,
     @SerializedName("venta")
-    val amountSellToCupon: Double,
+    val amountSellToCupon: Double?,
     @SerializedName("descuento")
-    val discount: Double,
+    val discount: Double?,
     @SerializedName("tipo_iniciativa_venta")
-    val typeIniciativeSale: Int,
+    val typeIniciativeSale: Int?,
     @SerializedName("tipo_iniciativa_descuento")
-    val anyProduct: Int,
+    val anyProduct: Int?,
     @SerializedName("misma_venta")
-    val forFirsSale: Int,
+    val forFirsSale: Int?,
     @SerializedName("limite_cupones")
-    val maxCuponQuantity: Int,
+    val maxCuponQuantity: Int?,
     @SerializedName("tipo_cupon")
-    val couponType: Int,
+    val couponType: Int?,
     @SerializedName("iniciativaForma")
-    val kindInit: Boolean,
+    val kindInit: Boolean?,
     @SerializedName("totalProductoRegala")
-    val productTotalToGift: Int
+    val productTotalToGift: Int?
 )

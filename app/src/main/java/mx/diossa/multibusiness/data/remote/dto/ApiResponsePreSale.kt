@@ -5,10 +5,10 @@ import mx.diossa.multibusiness.data.local.entity.PreSaleEntity
 
 data class ApiResponsePreSale(
     val data: PreSaleEntity,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponsePreSaleDetail(
     val data: PreSaleDetailEntity,
-    val message: String
+    val message: String?
 )

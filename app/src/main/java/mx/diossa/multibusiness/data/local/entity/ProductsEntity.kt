@@ -7,39 +7,39 @@ import com.google.gson.annotations.SerializedName
 @Entity("productsEntity")
 data class ProductsEntity(
     @SerializedName("id_linea")
-    val lineId: Int,
+    val lineId: Int?,
     @PrimaryKey @SerializedName("id_producto")
     val productId: Int,
     @SerializedName("preventa")
-    val preSale: Int,
+    val preSale: Int?,
     @SerializedName("id_proveedor")
-    val providerId: Int,
+    val providerId: Int?,
     @SerializedName("inventario")
-    val inventory: Int,
+    val inventory: Int?,
     @SerializedName("nombre")
-    val name: String,
+    val name: String?,
     @SerializedName("orden_proveedor")
-    val providerOrder: String,
+    val providerOrder: String?,
     @SerializedName("precio_neto")
-    val priceNeto: Float,
+    val priceNeto: Float?,
     @SerializedName("precio_unitario")
-    val priceUnitary: Float,
+    val priceUnitary: Float?,
     @SerializedName("proveedor")
-    val provider: String,
+    val provider: String?,
     @SerializedName("rmi_autorizado")
-    val authorizationRmi: Boolean,
+    val authorizationRmi: Boolean?,
     @SerializedName("rmv_autorizado")
-    val authorizationRmv: Boolean,
+    val authorizationRmv: Boolean?,
     @SerializedName("tasa_ieps")
-    val ieps: Float,
+    val ieps: Float?,
     @SerializedName("tasa_iva")
-    val iva: Float,
+    val iva: Float?,
     @SerializedName("inventario_fisico")
-    val physicInventory: Int,
+    val physicInventory: Int?,
     @SerializedName("order_insert")
-    val order: String,
+    val order: String?,
     @SerializedName("arqueador")
-    val arching: Int,
+    val arching: Int?,
     @SerializedName("id_subfamilia")
-    val subfamilyId: Int
+    val subfamilyId: Int?
 )

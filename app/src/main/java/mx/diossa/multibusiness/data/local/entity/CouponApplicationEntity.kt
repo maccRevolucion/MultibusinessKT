@@ -10,10 +10,10 @@ data class CouponApplicationEntity(
     @SerializedName("aplicationId")
     val applicationId: Int,
     @SerializedName("cuponId")
-    val couponId: String,
+    val couponId: String?,
     @SerializedName("saleId")
-    val saleId: String,
+    val saleId: String?,
     @SerializedName("totalUsed")
-    val totalUsed: Float,
+    val totalUsed: Float?,
     val couponApplicationDetail: List<CouponApplicationDetail>
 )

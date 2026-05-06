@@ -9,23 +9,23 @@ data class EmployeesEntity(
     @PrimaryKey @SerializedName("id_empleado")
     val employeeId: Int,
     @SerializedName("id_puesto")
-    val jobId: Int,
+    val jobId: Int?,
     @SerializedName("limite_credito")
-    val creditLimit: Double,
+    val creditLimit: Double?,
     @SerializedName("empleado")
-    val employee: String,
+    val employee: String?,
     @SerializedName("id_ruta")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("id_lista_precio_por_ruta")
-    val priceListByRouteId: Int,
+    val priceListByRouteId: Int?,
     @SerializedName("ruta")
-    val route: Int,
+    val route: Int?,
     @SerializedName("tipo_mercado")
-    val marketType: Int,
+    val marketType: Int?,
     @SerializedName("usuario")
-    val user: String,
+    val user: String?,
     @SerializedName("contrasenia")
-    val password: String,
+    val password: String?,
     @SerializedName("fecha")
-    val date: String
+    val date: String?
 )

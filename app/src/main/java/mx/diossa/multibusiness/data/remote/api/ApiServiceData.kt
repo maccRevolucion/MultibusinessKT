@@ -5,7 +5,8 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ApiServiceData {
-    //
+
+    //CARTA DE TRANSPORTE DE DATOS
     @GET("api/carry_letter/retrieve/{id_route}")
     suspend fun getData(@Path("id_route") idRoute: Int): ApiResponseData
 

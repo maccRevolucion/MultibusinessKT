@@ -9,15 +9,15 @@ data class LogMovements(
     @PrimaryKey @SerializedName("logId")
     val logId: String,
     @SerializedName("movement")
-    val movement: String,
+    val movement: String?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("hour")
-    val hour: String,
+    val hour: String?,
     @SerializedName("routeId")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("employeeId")
-    val employeeId: Int,
+    val employeeId: Int?,
     @SerializedName("success")
-    val success: Boolean
+    val success: Boolean?
 )

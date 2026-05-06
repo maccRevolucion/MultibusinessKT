@@ -10,21 +10,21 @@ data class LoadsEntity(
     @SerializedName("id_carga")
     val loadId: String,
     @SerializedName("id_ruta")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("movimiento")
-    val movement: String,
+    val movement: String?,
     @SerializedName("fecha")
-    val date: String,
+    val date: String?,
     @SerializedName("fecha_registro")
-    val registerDate: String,
+    val registerDate: String?,
     @SerializedName("usuario_registro")
-    val registrationUser: String,
+    val registrationUser: String?,
     @SerializedName("idEmpleadoAutorizoEntrada")
-    val employeeAuthorizeEntryId: Int,
+    val employeeAuthorizeEntryId: Int?,
     @SerializedName("idEmpleadoAutorizoGuardar")
-    val employeeAuthorizeSaveId: Int,
+    val employeeAuthorizeSaveId: Int?,
     @SerializedName("cambio_fecha")
-    val changeDate: String,
+    val changeDate: String?,
     @SerializedName("hora_registro")
-    val hour: String
+    val hour: String?
 )

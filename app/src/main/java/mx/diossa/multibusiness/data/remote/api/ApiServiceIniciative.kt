@@ -1,25 +1,27 @@
 package mx.diossa.multibusiness.data.remote.api
 
+import mx.diossa.multibusiness.data.local.entity.InitiativeEntity
 import mx.diossa.multibusiness.data.remote.dto.ApiResponseInitiative
 import mx.diossa.multibusiness.data.remote.dto.ApiResponseInitiativeDetailApply
 import mx.diossa.multibusiness.data.remote.dto.ApiResponseInitiativeDetailGenerate
+import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface ApiServiceIniciative {
 
-    //Iniciative Cupon
+    //CUPON DE INICIATIVA
     @GET("api/initiatives_cupon")
     suspend fun getIniciative(): ApiResponseInitiative
 
     @POST("api/cupon")
-    suspend fun postIniciative(): ApiResponseInitiative
+    suspend fun postIniciative(@Body request: List<InitiativeEntity>): ApiResponseInitiative
 
-    //Iniciative Cupon Detail
+    //DETALLE DE CUPON DE INICIATIVA
     @GET("api/initiatives_cupon_detail")
     suspend fun getIniciativeC(): ApiResponseInitiativeDetailGenerate
 
-    //Iniciative Coupon Detail Sale
+    //DETALLE DE CUPON DE INICIATIVA
     @GET("api/initiatives_cupon_sale_detail")
     suspend fun getIniciativeCD(): ApiResponseInitiativeDetailApply
 }

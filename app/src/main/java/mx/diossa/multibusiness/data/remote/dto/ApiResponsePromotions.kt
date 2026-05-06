@@ -7,20 +7,20 @@ import mx.diossa.multibusiness.data.local.entity.PromotionsFollowingEntity
 
 data class ApiResponsePromotion(
     val data: PromotionsEntity,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponsePromotionItem(
     val data: PromotionItemEntity,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponsePromotionsActive(
-    val data: PromotionsActiveEntity,
-    val message: String
+    val data: List<PromotionsActiveEntity>,
+    val message: String?
 )
 
 data class ApiResponsePromotionsFollowing(
-    val data: PromotionsFollowingEntity,
-    val message: String
+    val data: List<PromotionsFollowingEntity>,
+    val message: String?
 )

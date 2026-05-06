@@ -14,21 +14,21 @@ data class ApiResponseClient(
 
 data class ApiResponseClientAuthorization(
     val data: List<ClientAuthorizationEntity>,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseClientClassification(
     val data: List<ClientClassificationEntity>,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseClientRescheduleEntity(
     val data: List<ClientRescheduleEntity>,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseClientProductsBonifications(
     val data: List<ClientsProductsBonifications>,
-    val message: String
+    val message: String?
 )
 

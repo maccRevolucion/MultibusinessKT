@@ -10,11 +10,11 @@ data class HourChangeEntity(
     @SerializedName("idEvento")
     val idEvento: String,
     @SerializedName("description")
-    val description: String,
+    val description: String?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("hour")
-    val hour: String,
+    val hour: String?,
     @SerializedName("hourChanged")
-    val hourChanged: String
+    val hourChanged: String?
 )

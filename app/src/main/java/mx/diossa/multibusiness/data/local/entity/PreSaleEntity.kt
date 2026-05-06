@@ -13,37 +13,37 @@ data class PreSaleEntity(
     val preSaleDetailEntity: List<PreSaleDetailEntity>,
 
     @SerializedName("id_visita")
-    val visitId: String,
+    val visitId: String?,
     @SerializedName("id_ruta")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("id_cliente")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("folioNota")
-    val folioNota: String,
+    val folioNota: String?,
     @SerializedName("fecha_preventa")
-    val preSaleDate: String,
+    val preSaleDate: String?,
     @SerializedName("fecha_entrega")
-    val dateDelivery: String,
+    val dateDelivery: String?,
     @SerializedName("hora_preventa")
-    val hour: String,
+    val hour: String?,
     @SerializedName("fecha_registro")
-    val registrationDate: String,
+    val registrationDate: String?,
     @SerializedName("usuario_registro")
-    val registrationUser: String,
+    val registrationUser: String?,
     @SerializedName("usuario_modifico")
-    val modifiedUser: String,
+    val modifiedUser: String?,
     @SerializedName("fecha_modifico")
-    val modifiedDate: String,
+    val modifiedDate: String?,
     @SerializedName("activo")
-    val active: Int,
+    val active: Int?,
     @SerializedName("latitud")
-    val latitude: String,
+    val latitude: String?,
     @SerializedName("longitud")
-    val longitude: String,
+    val longitude: String?,
     @SerializedName("origen")
-    val origin: Int,
+    val origin: Int?,
     @SerializedName("motivo_modificacion")
-    val modificationReason: String,
+    val modificationReason: String?,
     @SerializedName("total")
-    val total: Float
+    val total: Float?
 )

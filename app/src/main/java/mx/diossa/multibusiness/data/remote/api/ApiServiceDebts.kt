@@ -8,11 +8,11 @@ import retrofit2.http.POST
 
 interface ApiServiceDebts {
 
-    //Debts
+    //DEUDAS
     @POST("api/client/debts")
     suspend fun postDebts(@Body request: List<DebtChargeEntity>): ApiResponseDebt
 
-    //Debts Charge
+    //CARGO DE DEUDAS
     @GET("api/debts_collections_services")
     suspend fun getDebts(): ApiResponseDebt
 

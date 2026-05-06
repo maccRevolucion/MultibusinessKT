@@ -6,7 +6,8 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface ApiServiceVisit {
-    //
+
+    //VISITA
     @POST("api/visit")
     suspend fun postVisit(@Body request: List<VisitEntity>): ApiResponseVisit
 }

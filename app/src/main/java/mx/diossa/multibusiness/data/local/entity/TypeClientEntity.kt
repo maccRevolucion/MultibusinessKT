@@ -10,11 +10,11 @@ data class TypeClientEntity (
     @SerializedName("id_cliente_tipo")
     val idTypeClient: Int,
     @SerializedName("nombre")
-    val name: String,
+    val name: String?,
     @SerializedName("activo")
-    val active: Boolean,
+    val active: Boolean?,
     @SerializedName("usuario_registro")
-    val userRegister: Int,
+    val userRegister: Int?,
     @SerializedName("fecha_registro")
-    val dateRegister: String
+    val dateRegister: String?
 )

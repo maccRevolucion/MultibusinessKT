@@ -10,17 +10,17 @@ data class MonederoEntity(
     @SerializedName("walletId")
     val walletId: String,
     @SerializedName("folio")
-    val folio: String,
+    val folio: String?,
     val couponEntities: List<CouponEntity>,
 
     @SerializedName("clientId")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("balance")
-    val balance: Double,
+    val balance: Double?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("time")
-    val time: String,
+    val time: String?,
     @SerializedName("active")
-    val active: Int
+    val active: Int?
 )

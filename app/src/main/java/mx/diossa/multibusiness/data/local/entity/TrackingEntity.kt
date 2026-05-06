@@ -10,15 +10,15 @@ data class TrackingEntity (
     @SerializedName("trackingId")
     val trackingId: String,
     @SerializedName("latitude")
-    val latitude: String,
+    val latitude: String?,
     @SerializedName("longitude")
-    val longitude: String,
+    val longitude: String?,
     @SerializedName("velocity")
-    val velocity: Float,
+    val velocity: Float?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("hour")
-    val hour: String,
+    val hour: String?,
     @SerializedName("distance")
-    val distance: Float
+    val distance: Float?
 )

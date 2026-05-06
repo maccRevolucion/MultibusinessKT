@@ -6,16 +6,16 @@ import mx.diossa.multibusiness.data.local.entity.InitiativeEntity
 
 data class ApiResponseInitiative(
     val data: InitiativeEntity,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseInitiativeDetailApply(
     val data: InitiativeDetailApplyEntity,
-    val message: String
+    val message: String?
 )
 
 data class ApiResponseInitiativeDetailGenerate(
     val data: InitiativeDetailGenerateEntity,
-    val message: String
+    val message: String?
 )
 

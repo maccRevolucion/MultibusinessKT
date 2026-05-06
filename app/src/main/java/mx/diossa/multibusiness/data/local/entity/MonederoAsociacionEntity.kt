@@ -10,9 +10,9 @@ data class MonederoAsociacionEntity(
     @SerializedName("associationId")
     val associationId: String,
     @SerializedName("productId")
-    val productId: Int,
+    val productId: Int?,
     @SerializedName("lineId")
-    val lineId: Int,
+    val lineId: Int?,
     @SerializedName("familiId")
-    val familiId: Int
+    val familiId: Int?
 )

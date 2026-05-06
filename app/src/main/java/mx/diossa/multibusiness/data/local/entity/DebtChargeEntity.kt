@@ -10,19 +10,19 @@ data class DebtChargeEntity(
     @SerializedName("id_servicio")
     val idService: Int,
     @SerializedName("nombre")
-    val name: String,
+    val name: String?,
     @SerializedName("id_claveprodserv")
-    val idProduct: Int,
+    val idProduct: Int?,
     @SerializedName("costo_cobranza")
-    val charge: Double,
+    val charge: Double?,
     @SerializedName("id_grupo_rutas")
-    val idGroupRoute: Int,
+    val idGroupRoute: Int?,
     @SerializedName("activo")
-    val active: Boolean,
+    val active: Boolean?,
     @SerializedName("usuario_registro")
-    val userRegister: Int,
+    val userRegister: Int?,
     @SerializedName("fecha_registro")
-    val dateRegister: String,
+    val dateRegister: String?,
     @SerializedName("tipo_credito")
-    val typeCredit: Int,
+    val typeCredit: Int?,
 )

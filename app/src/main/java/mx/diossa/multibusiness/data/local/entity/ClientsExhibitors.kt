@@ -10,11 +10,11 @@ data class ClientsExhibitors(
     @SerializedName("clientIdExhibitor")
     val clientIdExhibitor: Int,
     @SerializedName("clientId")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("exhibitorId")
-    val exhibitorId: Int,
+    val exhibitorId: Int?,
     @SerializedName("routeId")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("active")
-    val active: Int
+    val active: Int?
 )

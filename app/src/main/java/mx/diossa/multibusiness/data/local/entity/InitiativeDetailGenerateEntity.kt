@@ -9,5 +9,5 @@ data class InitiativeDetailGenerateEntity(
     @SerializedName("id_iniciativa")
     val iniciativeId: Int,
     @SerializedName("id_producto_venta")
-    val producId: Int
+    val producId: Int?
 )

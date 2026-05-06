@@ -10,11 +10,11 @@ data class PriceListEntity(
     @SerializedName("id_producto")
     val productId: Int,
     @SerializedName("nombre")
-    val name: String,
+    val name: String?,
     @SerializedName("fecha_inicio")
-    val startDate: String,
+    val startDate: String?,
     @SerializedName("fecha_fin")
-    val endDate: String,
+    val endDate: String?,
     @SerializedName("precio_unitario")
-    val priceUnitary: Float
+    val priceUnitary: Float?
 )

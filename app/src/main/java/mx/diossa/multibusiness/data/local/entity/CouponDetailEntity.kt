@@ -10,7 +10,7 @@ data class CouponDetailEntity(
     @SerializedName("coupon_detail_id")
     val couponDetailId: String,
     @SerializedName("product_id")
-    val productId: Int,
+    val productId: Int?,
     @SerializedName("quantity")
-    val quantity: Int
+    val quantity: Int?
 )

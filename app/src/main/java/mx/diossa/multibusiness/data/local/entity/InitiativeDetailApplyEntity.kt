@@ -9,5 +9,5 @@ data class InitiativeDetailApplyEntity(
     @SerializedName("id_iniciativa")
     val iniciativeId: Int,
     @SerializedName("id_producto")
-    val producId: Int
+    val producId: Int?
 )

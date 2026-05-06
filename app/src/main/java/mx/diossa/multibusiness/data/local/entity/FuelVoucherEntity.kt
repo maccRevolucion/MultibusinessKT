@@ -10,36 +10,36 @@ data class FuelVoucherEntity(
     @SerializedName("id_combustible_vale")
     val fuelVoucherId: Int,
     @SerializedName("fecha")
-    val date: String,
+    val date: String?,
     @SerializedName("id_empleado")
-    val employeeId: Int,
+    val employeeId: Int?,
     @SerializedName("id_ruta")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("id_vehiculo")
-    val vehicleId: Int,
+    val vehicleId: Int?,
     @SerializedName("placas")
-    val placas: String,
+    val placas: String?,
     @SerializedName("id_combustible")
-    val fuelId: Int,
+    val fuelId: Int?,
     @SerializedName("id_proveedor")
-    val providerId: Int,
+    val providerId: Int?,
     @SerializedName("tipo_vale")
-    val voucherType: String,
+    val voucherType: String?,
     @SerializedName("litros")
-    val litros: Float,
+    val litros: Float?,
     @SerializedName("fecha_registro")
-    val dateRegister: String,
+    val dateRegister: String?,
     @SerializedName("usuario_registro")
-    val userRegister: Int,
+    val userRegister: Int?,
     @SerializedName("status")
-    val status: String,
+    val status: String?,
     @SerializedName("impresiones")
-    val impresiones: Int,
+    val impresiones: Int?,
     @SerializedName("id_autorizo")
-    val authorizationId: Int,
+    val authorizationId: Int?,
     @SerializedName("obeservaciones")
-    val observations: String,
+    val observations: String?,
     @SerializedName("fecha_hora")
-    val dateHour: String
+    val dateHour: String?
 
 )

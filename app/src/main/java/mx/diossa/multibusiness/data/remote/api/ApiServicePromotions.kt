@@ -11,11 +11,11 @@ import retrofit2.http.Path
 
 interface ApiServicePromotions {
 
-    //Promotions
+    //PROMOCIONES
     @GET("api/discount_promotion?pk_route={id_route}")
     suspend fun getPromotions(@Path("id_route") idRoute: Int): ApiResponsePromotion
 
-    //Promotions Active
+    //PROMOCIONES ACTIVAS
     @GET("api/discount_promotion_following?pk_route={id_route}")
     suspend fun getPromotionsActive(@Path("id_route") idRoute: Int): ApiResponsePromotionsActive
 

@@ -9,13 +9,13 @@ data class SalesMethodPaymentEntity(
     @PrimaryKey @SerializedName("salesMethodPaymentId")
     val salesMethodPaymentId: String,
     @SerializedName("typePayment")
-    val typePayment: String,
+    val typePayment: String?,
     @SerializedName("idMethodPayment")
-    val idMethodPayment: Int,
+    val idMethodPayment: Int?,
     @SerializedName("amount")
-    val amount: Float,
+    val amount: Float?,
     @SerializedName("bank")
-    val bank: String,
+    val bank: String?,
     @SerializedName("account")
-    val account: String
+    val account: String?
 )

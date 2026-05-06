@@ -10,23 +10,23 @@ data class FuelTicketEntity(
     @SerializedName("id_combustible_ticket")
     val fuelTicketId: String,
     @SerializedName("id_combustible_vale")
-    val fuelVoucherId: Int,
+    val fuelVoucherId: Int?,
     @SerializedName("folio")
-    val folio: String,
+    val folio: String?,
     @SerializedName("litros")
-    val litros: Float,
+    val litros: Float?,
     @SerializedName("precio")
-    val price: Float,
+    val price: Float?,
     @SerializedName("subtotal")
-    val subtotal: Float,
+    val subtotal: Float?,
     @SerializedName("iva")
-    val iva: Float,
+    val iva: Float?,
     @SerializedName("total")
-    val total: Float,
+    val total: Float?,
     @SerializedName("condiciones_pago")
-    val conditionPay: String,
+    val conditionPay: String?,
     @SerializedName("kilometraje")
-    val kilometraje: Float,
+    val kilometraje: Float?,
     @SerializedName("usuario_registro")
-    val userRegister: Int
+    val userRegister: Int?
 )

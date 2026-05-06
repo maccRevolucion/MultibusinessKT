@@ -8,7 +8,8 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface ApiServiceFolios {
-    //
+
+    //FOLIOS
     @GET("api/route/{id_route}/folios")
     suspend fun getFolios(@Path("id_route") idRoute: Int): ApiResponseFolios
 

@@ -10,73 +10,73 @@ data class DataCarryLetterEntity(
     @SerializedName("folio")
     val invoice: Int,
     @SerializedName("serie")
-    val serie: String,
+    val serie: String?,
     @SerializedName("tipo_comprobante")
-    val typeVoucher: String,
+    val typeVoucher: String?,
     @SerializedName("lugar_emision")
-    val broadcastPlace: Int,
+    val broadcastPlace: Int?,
     @SerializedName("fecha_hora_emision")
-    val broadcastDateTime: String,
+    val broadcastDateTime: String?,
     @SerializedName("nombre_factura")
-    val invoiceName: String,
+    val invoiceName: String?,
     @SerializedName("rfc")
-    val rfc: String,
+    val rfc: String?,
     @SerializedName("tipo_ubicacion_origen")
-    val sourceLocationType: String,
+    val sourceLocationType: String?,
     @SerializedName("rfc_remitente")
-    val rfcRemitter: String,
+    val rfcRemitter: String?,
     @SerializedName("rfc_destinatario")
-    val rfc_recipient: String,
+    val rfc_recipient: String?,
     @SerializedName("fecha_hora_salida")
-    val departureDateTime: String,
+    val departureDateTime: String?,
     @SerializedName("fecha_hora_retorno")
-    val returnDateTime: String,
+    val returnDateTime: String?,
     @SerializedName("distancia_recorrida")
-    val distanceTraveled: Int,
+    val distanceTraveled: Int?,
     @SerializedName("peso_bruto_total")
-    val grossWeightTotal: Double,
+    val grossWeightTotal: Double?,
     @SerializedName("num_mercancias")
-    val numMerchandise: Int,
+    val numMerchandise: Int?,
     @SerializedName("unidad_peso")
-    val unitWeight: String,
+    val unitWeight: String?,
     @SerializedName("clave_permiso")
-    val permissionKey: String,
+    val permissionKey: String?,
     @SerializedName("numero_permiso")
-    val permitNumber: String,
+    val permitNumber: String?,
     @SerializedName("placa_vehiculo")
-    val vehiclePlate: String,
+    val vehiclePlate: String?,
     @SerializedName("anio_modelo")
-    val yearModel: Int,
+    val yearModel: Int?,
     @SerializedName("aseguradora")
-    val insuranceCarrier: String,
+    val insuranceCarrier: String?,
     @SerializedName("poliza_resp_civil")
-    val civilRespPolicy: Int,
+    val civilRespPolicy: Int?,
     @SerializedName("tipo_figura")
-    val figureType: String,
+    val figureType: String?,
     @SerializedName("rfc_figura")
-    val rfcFigure: String,
+    val rfcFigure: String?,
     @SerializedName("no_licencia")
-    val noLicensing: String,
+    val noLicensing: String?,
     @SerializedName("nombre_figura")
-    val figureName: String,
+    val figureName: String?,
     @SerializedName("estado_figura")
-    val figureState: String,
+    val figureState: String?,
     @SerializedName("codigo_figura")
-    val codeFigure: Int,
+    val codeFigure: Int?,
     @SerializedName("nombre_ruta")
-    val pathName: String,
+    val pathName: String?,
     @SerializedName("folio_fiscal")
-    val taxFolio: String,
+    val taxFolio: String?,
     @SerializedName("numero_certificado_sat")
-    val satCertificateNumber: String,
+    val satCertificateNumber: String?,
     @SerializedName("fecha_hora_certificado")
-    val certificateProvider: String,
+    val certificateProvider: String?,
     @SerializedName("rfc_proveedor_certificado")
-    val rfcCertificateProvider: String,
+    val rfcCertificateProvider: String?,
     @SerializedName("sello_digital_sat")
-    val stampDigitalSat: String,
+    val stampDigitalSat: String?,
     @SerializedName("sello_digital_cfdi")
-    val cfdiDigitalStamp: String,
+    val cfdiDigitalStamp: String?,
     @SerializedName("cadena_original")
-    val originalString: String
+    val originalString: String?
 )

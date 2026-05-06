@@ -8,13 +8,13 @@ data class TaxesEntity (
     @SerializedName("nombre")
     val name: String,
     @SerializedName("concepto")
-    val concept: String,
+    val concept: String?,
     @SerializedName("importe")
-    val percent: Float,
+    val percent: Float?,
     @SerializedName("fecha_inicio")
-    val startDate: String,
+    val startDate: String?,
     @SerializedName("fecha_fin")
-    val endDate: String,
+    val endDate: String?,
     @SerializedName("activo")
-    val active: Int
+    val active: Int?
 )

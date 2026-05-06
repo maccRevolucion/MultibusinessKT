@@ -9,27 +9,27 @@ data class PreSaleDetailEntity(
     @SerializedName("id_preventa")
     val preSalesDetailId: String,
     @SerializedName("id_producto")
-    val productId: Int,
+    val productId: Int?,
     @SerializedName("cantidad")
-    val quantity: Int,
+    val quantity: Int?,
     @SerializedName("precio_unitario")
-    val price: Double,
+    val price: Double?,
     @SerializedName("importe")
-    val amount: Double,
+    val amount: Double?,
     @SerializedName("iva")
-    val iva: Double,
+    val iva: Double?,
     @SerializedName("ieps")
-    val ieps: Double,
+    val ieps: Double?,
     @SerializedName("total")
-    val total: Double,
+    val total: Double?,
     @SerializedName("bonificacion_importe")
-    val bonificationAmount: Double,
+    val bonificationAmount: Double?,
     @SerializedName("bonificacion_porcentaje")
-    val bonificationPorcentage: Double,
+    val bonificationPorcentage: Double?,
     @SerializedName("bonificacion_iva")
-    val bonificationIva: Double,
+    val bonificationIva: Double?,
     @SerializedName("bonificacion_ieps")
-    val bonificationIeps: Double,
+    val bonificationIeps: Double?,
     @SerializedName("bonificacion_total")
-    val bonificationTotal: Double
+    val bonificationTotal: Double?
 )

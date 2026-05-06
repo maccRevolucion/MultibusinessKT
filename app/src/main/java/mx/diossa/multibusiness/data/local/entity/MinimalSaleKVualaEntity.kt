@@ -10,9 +10,9 @@ data class MinimalSaleKVualaEntity(
     @SerializedName("id_venta_minima_kelloggs_vuala")
     val minimalSaleId: Int,
     @SerializedName("compra_minima_superior")
-    val maxSale: Double,
+    val maxSale: Double?,
     @SerializedName("compra_minima_inferior")
-    val minimalSale: Double,
+    val minimalSale: Double?,
     @SerializedName("limite")
-    val limit: Int
+    val limit: Int?
 )

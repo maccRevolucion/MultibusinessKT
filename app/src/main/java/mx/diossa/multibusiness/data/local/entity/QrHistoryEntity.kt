@@ -8,5 +8,5 @@ import com.google.gson.annotations.SerializedName
 data class QrHistoryEntity(
     @PrimaryKey
     val id: Int,
-    val codescan: String
+    val codescan: String?
 )

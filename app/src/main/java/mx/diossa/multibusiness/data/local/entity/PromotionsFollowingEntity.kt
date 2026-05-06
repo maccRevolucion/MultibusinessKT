@@ -9,13 +9,13 @@ data class PromotionsFollowingEntity(
     @PrimaryKey
     val promotionFollowingId: Int,
     @SerializedName("id_promocion")
-    val promotionId: Int,
-    val routeId: Int,
+    val promotionId: Int?,
+    val routeId: Int?,
     @SerializedName("id_cliente")
-    val clientId: Int,
-    val dateFollowing: String,
+    val clientId: Int?,
+    val dateFollowing: String?,
     @SerializedName("folio_nota")
-    val folio: String,
+    val folio: String?,
     @SerializedName("cantidad")
-    val quantityProm: Int
+    val quantityProm: Int?
 )

@@ -10,13 +10,13 @@ data class DeviceEventEntity(
     @SerializedName("deviceEventId")
     val deviceEventId: String,
     @SerializedName("description")
-    val description: String,
+    val description: String?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("hour")
-    val hour: String,
+    val hour: String?,
     @SerializedName("latitude")
-    val latitud: String,
+    val latitud: String?,
     @SerializedName("longitude")
-    val logitud: String
+    val logitud: String?
 )

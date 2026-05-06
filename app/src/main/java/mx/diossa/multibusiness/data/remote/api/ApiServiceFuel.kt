@@ -10,7 +10,8 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface ApiServiceFuel {
-    //Fuel Ticket
+
+    //TICKET-BOLETO DE COMBUSTIBLE
     @GET("api/route/{id_route}/fuels")
     suspend fun getFuel(@Path("id_route") idRoute: Int): ApiResponseFuelVoucher
 

@@ -11,27 +11,27 @@ data class SaleDetailEntity(
     @SerializedName("salesDetailId")
     val salesDetailId: String,
     @SerializedName("productId")
-    val productId: Int,
+    val productId: Int?,
     @SerializedName("quantity")
-    val quantity: Int,
+    val quantity: Int?,
     @SerializedName("price")
-    val price: Double,
+    val price: Double?,
     @SerializedName("amount")
-    val amount: Double,
+    val amount: Double?,
     @SerializedName("iva")
-    val iva: Double,
+    val iva: Double?,
     @SerializedName("total")
-    val total: Double,
+    val total: Double?,
     @SerializedName("bonificationPorcentage")
-    val bonificationPorcentage: Double,
+    val bonificationPorcentage: Double?,
     @SerializedName("bonificationTotal")
-    val bonificationTotal: Double,
+    val bonificationTotal: Double?,
     @SerializedName("bonificationIva")
-    val bonificationIva: Double,
+    val bonificationIva: Double?,
     @SerializedName("bonificationAmount")
-    val bonificationAmount: Double,
+    val bonificationAmount: Double?,
     @SerializedName("ieps")
-    val ieps: Double,
+    val ieps: Double?,
     @SerializedName("bonificationIeps")
-    val bonificationIeps: Double
+    val bonificationIeps: Double?
 )

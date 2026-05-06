@@ -4,5 +4,5 @@ import mx.diossa.multibusiness.data.local.entity.PriceListEntity
 
 data class ApiResponsePrice(
     val data: PriceListEntity,
-    val message: String
+    val message: String?
 )

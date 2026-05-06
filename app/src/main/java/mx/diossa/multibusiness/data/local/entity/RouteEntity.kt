@@ -10,17 +10,17 @@ data class RouteEntity(
     @SerializedName("id_ruta")
     val routeId: Int,
     @SerializedName("nombre")
-    val name: Int,
+    val name: Int?,
     @SerializedName("alta_clientes")
-    val addClients: Int,
+    val addClients: Int?,
     @SerializedName("fuera_recorrido")
-    val outTravel: Int,
+    val outTravel: Int?,
     @SerializedName("arqueo")
-    val arching: Int,
+    val arching: Int?,
     @SerializedName("hora_entrega")
-    val deliveryHour: String,
+    val deliveryHour: String?,
     @SerializedName("id_ruta_grupo")
-    val idGroupRoute: Int,
+    val idGroupRoute: Int?,
     @SerializedName("ultima_liquidacion")
-    val lastLiquidation: String
+    val lastLiquidation: String?
 )

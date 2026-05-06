@@ -10,19 +10,19 @@ data class InventoryCarryLetterEntity(
     @SerializedName("id_producto")
     val idProduct: Int,
     @SerializedName("ClaveProdServ")
-    val keyProdServ: Int,
+    val keyProdServ: Int?,
     @SerializedName("Descripcion")
-    val description: String,
+    val description: String?,
     @SerializedName("Cantidad")
-    val quantity: Int,
+    val quantity: Int?,
     @SerializedName("ClaveUnidad")
-    val keyUnit: String,
+    val keyUnit: String?,
     @SerializedName("PesoEnKg")
-    val weightKg: Double,
+    val weightKg: Double?,
     @SerializedName("ValorUnitario")
-    val unitValue: Double,
+    val unitValue: Double?,
     @SerializedName("Importe")
-    val amount: Float,
+    val amount: Float?,
     @SerializedName("MaterialPeligroso")
-    val dangerousMaterial: String
+    val dangerousMaterial: String?
 )

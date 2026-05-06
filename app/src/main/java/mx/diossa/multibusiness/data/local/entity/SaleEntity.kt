@@ -16,60 +16,60 @@ data class SaleEntity(
     val salesMethodPaymentsEntity: List<SalesMethodPaymentEntity>,
 
     @SerializedName("visitId")
-    val visitId: String,
+    val visitId: String?,
     @SerializedName("preSale")
-    val preSale: Int,
+    val preSale: Int?,
     @SerializedName("folioNota")
-    val folioNota: String,
+    val folioNota: String?,
     @SerializedName("clientId")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("routeId")
-    val routeId: Int,
+    val routeId: Int?,
     @SerializedName("date")
-    val date: String,
+    val date: String?,
     @SerializedName("dateDelivery")
-    val dateDelivery: String,
+    val dateDelivery: String?,
     @SerializedName("hour")
-    val hour: String,
+    val hour: String?,
     @SerializedName("subTotal")
-    val subTotal: Double,
+    val subTotal: Double?,
     @SerializedName("totalIva")
-    val totalIva: Double,
+    val totalIva: Double?,
     @SerializedName("totalIeps")
-    val totalIeps: Double,
+    val totalIeps: Double?,
     @SerializedName("total")
-    val total: Double,
+    val total: Double?,
     @SerializedName("methodPayment")
-    val methodPayment: String,
+    val methodPayment: String?,
     @SerializedName("bank")
-    val bank: String,
+    val bank: String?,
     @SerializedName("numberAccount")
-    val numberAccount: String,
+    val numberAccount: String?,
     @SerializedName("typeCredit")
-    val typeCredit: Int,
+    val typeCredit: Int?,
     @SerializedName("closed")
-    val closed: Int,
+    val closed: Int?,
     @SerializedName("invoice")
-    val invoice: Int,
+    val invoice: Int?,
     @SerializedName("bonification")
-    val bonification: Int,
+    val bonification: Int?,
     @SerializedName("latitud")
-    val latitude: String,
+    val latitude: String?,
     @SerializedName("longitud")
-    val longitude: String,
+    val longitude: String?,
     @SerializedName("conceptId")
-    val concept: Int,
+    val concept: Int?,
     @SerializedName("statusSale")
-    val statusSale: Int,
+    val statusSale: Int?,
     @SerializedName("statusSalesRmi")
-    val statusSalesRmi: Int,
+    val statusSalesRmi: Int?,
     @SerializedName("modificationReason")
-    val modificationReason: String,
+    val modificationReason: String?,
     @SerializedName("useCfdiId")
-    val useCfdiId: Int,
+    val useCfdiId: Int?,
     @SerializedName("id_preventa_parent")
-    val parentPresaleId: Int,
-    val newClient: Int,
-    val bonificationTotal: Double,
-    val neto: Double
+    val parentPresaleId: Int?,
+    val newClient: Int?,
+    val bonificationTotal: Double?,
+    val neto: Double?
 )

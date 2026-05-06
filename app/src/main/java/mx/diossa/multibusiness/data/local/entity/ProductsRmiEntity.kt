@@ -7,21 +7,21 @@ import com.google.gson.annotations.SerializedName
 @Entity("productsRmiEntity")
 data class ProductsRmiEntity(
     @SerializedName("id_linea")
-    val lineId: Int,
+    val lineId: Int?,
     @PrimaryKey @SerializedName("id_producto")
     val productId: Int,
     @SerializedName("nombre")
-    val name: String,
+    val name: String?,
     @SerializedName("order_proveedor")
-    val providerOrder: String,
+    val providerOrder: String?,
     @SerializedName("precio_unitario")
-    val price: String,
+    val price: String?,
     @SerializedName("proveedor")
-    val provider: String,
+    val provider: String?,
     @SerializedName("rmi_autorizado")
-    val authorizationRmi: Boolean,
+    val authorizationRmi: Boolean?,
     @SerializedName("tasa_ieps")
-    val ieps: Float,
+    val ieps: Float?,
     @SerializedName("tasa_iva")
-    val iva: Float
+    val iva: Float?
 )

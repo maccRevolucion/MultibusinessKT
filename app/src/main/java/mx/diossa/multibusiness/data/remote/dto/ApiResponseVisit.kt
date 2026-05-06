@@ -4,5 +4,5 @@ import mx.diossa.multibusiness.data.local.entity.VisitEntity
 
 data class ApiResponseVisit(
     val data: VisitEntity,
-    val message: String
+    val message: String?
 )

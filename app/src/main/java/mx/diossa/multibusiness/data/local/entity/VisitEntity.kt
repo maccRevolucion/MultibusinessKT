@@ -12,29 +12,29 @@ data class VisitEntity(
 
 
     @SerializedName("hora_inicio")
-    val hourInitial: String,
+    val hourInitial: String?,
     @SerializedName("hora_fin")
-    val hourFinish: String,
+    val hourFinish: String?,
     @SerializedName("fecha")
-    val date: String,
+    val date: String?,
     @SerializedName("latitud")
-    val latitud: String,
+    val latitud: String?,
     @SerializedName("longitud")
-    val longitud: String,
+    val longitud: String?,
     @SerializedName("id_cliente")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("distancia_apertura")
-    val distanceOpening: Float,
+    val distanceOpening: Float?,
     @SerializedName("distancia_cierre")
-    val distanceClosed: Float,
+    val distanceClosed: Float?,
     @SerializedName("executeSale")
-    val executeSale: Int,
+    val executeSale: Int?,
     @SerializedName("statusSale")
-    val statusSale: Int,
+    val statusSale: Int?,
     @SerializedName("justificacion")
-    val justification: String,
+    val justification: String?,
     @SerializedName("programados")
-    val programmed: Int,
+    val programmed: Int?,
     @SerializedName("formato_visita")
-    val visitFormat: String
+    val visitFormat: String?
 )

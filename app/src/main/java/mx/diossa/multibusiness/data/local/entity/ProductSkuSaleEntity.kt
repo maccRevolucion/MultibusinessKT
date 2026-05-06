@@ -10,14 +10,14 @@ data class ProductSkuSaleEntity(
     @SerializedName("id_product_sku_sale")
     val idProductSkuSale: String,
     @SerializedName("id_product_sku")
-    val idProductSku: Int,
+    val idProductSku: Int?,
     @SerializedName("note_folio")
-    val noteFolio: String,
+    val noteFolio: String?,
     @SerializedName("id_prod uct")
-    val idProduct: Int,
+    val idProduct: Int?,
 
     @SerializedName("quantity")
-    val quantity: Int,
+    val quantity: Int?,
     @SerializedName("concept")
-    val concept: String
+    val concept: String?
 )

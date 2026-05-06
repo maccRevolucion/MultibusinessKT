@@ -10,10 +10,10 @@ data class PromotionsActiveEntity (
     @SerializedName("id_promocion_activa")
     val promotionsActive: Int,
     @SerializedName("id_promocion")
-    val promotionId: Int,
+    val promotionId: Int?,
     @SerializedName("id_cliente")
-    val clientId: Int,
+    val clientId: Int?,
     @SerializedName("cantidad")
-    val quantity: Int
+    val quantity: Int?
 
 )

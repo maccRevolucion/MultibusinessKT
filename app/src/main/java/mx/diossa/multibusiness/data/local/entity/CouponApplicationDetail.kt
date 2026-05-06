@@ -9,5 +9,5 @@ data class CouponApplicationDetail(
     @SerializedName("productId")
     val productId: Int,
     @SerializedName("amount")
-    val amount: Float
+    val amount: Float?
 )
