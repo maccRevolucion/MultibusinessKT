@@ -4,5 +4,5 @@ import mx.diossa.multibusiness.data.local.entity.DeviceEventEntity
 
 data class ApiResponseDevice(
     val data: DeviceEventEntity,
-    val message: String
+    val message: String?
 )
