@@ -7,5 +7,5 @@ import retrofit2.http.Path
 interface ApiServiceEmployees {
     //EMPLEADOS
     @GET("api/cedis/{id_cedis}/employees")
-    suspend fun getEmployees(@Path("id_cedis") idRoute: Int): ApiResponseEmployees
+    suspend fun getEmployees(@Path("id_cedis") idCedis: Int): ApiResponseEmployees
 }

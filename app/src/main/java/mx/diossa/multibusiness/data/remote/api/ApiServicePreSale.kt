@@ -20,5 +20,5 @@ interface ApiServicePreSale {
 
     //DETALLE DE PREVENTA
     @GET("api/route/{id_route}/details/presales")
-    suspend fun getPreSalesDetail(): ApiResponsePreSaleDetail
+    suspend fun getPreSalesDetail(@Path("id_route") idRoute: Int): ApiResponsePreSaleDetail
 }

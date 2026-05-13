@@ -19,9 +19,9 @@ interface ApiServiceIniciative {
 
     //DETALLE DE CUPON DE INICIATIVA
     @GET("api/initiatives_cupon_detail")
-    suspend fun getIniciativeC(): ApiResponseInitiativeDetailGenerate
+    suspend fun getIniciativeCuponDetail(): ApiResponseInitiativeDetailGenerate
 
-    //DETALLE DE CUPON DE INICIATIVA
+    //DETALLE INICIATIVA DE CUPON DE VENTA
     @GET("api/initiatives_cupon_sale_detail")
-    suspend fun getIniciativeCD(): ApiResponseInitiativeDetailApply
+    suspend fun getIniciativeCuponDetailApply(): ApiResponseInitiativeDetailApply
 }
