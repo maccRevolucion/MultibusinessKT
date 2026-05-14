@@ -19,6 +19,7 @@ interface ApiServicePromotions {
     @GET("api/discount_promotion_following?pk_route={id_route}")
     suspend fun getPromotionsActive(@Path("id_route") idRoute: Int): ApiResponsePromotionsActive
 
+    //ENVIO DE PROMOCIONES APLICADAS
     @POST("api/discount_promotion_following")
     suspend fun postPromotionsActive(@Body request: List<PromotionsFollowingEntity>): ApiResponsePromotionsFollowing
 }

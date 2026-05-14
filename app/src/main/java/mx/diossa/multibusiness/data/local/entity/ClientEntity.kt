@@ -78,5 +78,7 @@ data class ClientEntity(
     @SerializedName("orderReschedule")
     val orderReschedule: Int?,
     @SerializedName("dateRegister")
-    val dateRegister: String?
+    val dateRegister: String?,
+    val isSynced: Boolean = true,
+    val isPendingNew: Boolean = false
 )

@@ -6,7 +6,8 @@ import com.google.gson.annotations.SerializedName
 
 @Entity("charges")
 data class ChargesEntity(
-    @PrimaryKey @SerializedName("id_cargo")
+    @PrimaryKey(autoGenerate = true)
+    @SerializedName("id_cargo")
     val chargeId: Int,
     @SerializedName("id_ruta")
     val routeId: Int,
@@ -46,5 +47,6 @@ data class ChargesEntity(
     val expired: Int? = 0,
     @SerializedName("id_motivo_cancelacion")
     val cancellationReasonId: Int? = 0,
-    val newCharge: Int? = 0
+    val newCharge: Int? = 0,
+    val isSynced: Boolean = true
 )

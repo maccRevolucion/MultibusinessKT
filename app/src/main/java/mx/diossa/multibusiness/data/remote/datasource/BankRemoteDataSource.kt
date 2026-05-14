@@ -5,7 +5,7 @@ import mx.diossa.multibusiness.data.remote.dto.ApiResponseBank
 import javax.inject.Inject
 
 class BankRemoteDataSource @Inject constructor(
-    private val apiServiceBank: ApiServiceBank
+    private val apiService: ApiServiceBank
 ){
-    suspend fun getBanks(): ApiResponseBank = apiServiceBank.getBanks()
+    suspend fun getBanks() = apiService.getBanks()
 }
